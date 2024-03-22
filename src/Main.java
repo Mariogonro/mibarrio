@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        ArticuloInventario prod = new ArticuloInventario("01122","Modem","Modem 5G","Computación","computacion,modem",350.00,"http://www.foto.com");
-        prod.mostrarDetalle();
+        ProductoAlimenticio Product = new ProductoAlimenticio(1, "Pan", "Pan dulce", "Arinas", "Pan,Arina,Dulce", 2, "http://pan.com", "22/03/2024");
+        Product.mostrarDetalle();
+        Product.calcularPrecioVenta();
+
+        ProductoElectronico Producto = new ProductoElectronico(2, "Refrigerador", "Refrigerador 11'", "Linea Blanca", "Linea Blanca, Congelador, Refrigerador", 2000, "http://refri.com", 6);
+        Producto.mostrarDetalle();
+        Producto.calcularPrecioVenta();
+
+
     }
 }
